@@ -20,7 +20,13 @@ pip install sympy matplotlib wolframalpha
 For the code to run normally, all files should be placed in the same folder
 
 ## Step by step guide
-> This guide will help you to run the program normally without reading the code
-> However, there are still tips written as comments in each file that help you to read the code easier
+> This guide will help you to run the program normally without reading the code.
+> However, there are still tips written as comments in each file that help you to read the code easier.
 
 ### `main.py` file
+> This is the main file of the program and it's function is to solve a first order ODE with 3 methods
+> Forward Euler, Backward Euler, Trapezoidal.
+
+* Step 1: Enter required data as the tutorial in the `Input/input.txt` file
+> All values in the same line must be splitted by a comma.
+> In the first line, either `^` or `**` are acceptable, but `e^x` must be replaced by `exp(x)`.

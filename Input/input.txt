@@ -3,6 +3,11 @@
 0, 1, 2
 n
 
+# First line presents the given fisrt order ODE
+# Second line presents x0, y0, xn, h
+# Third line presents the methods that will be used
+# Forth line presents if it is necessary to plot the exact answer
+
 # '0' for Forward Euler method
 # '1' for Backward Euler method
 # '2' for Trapezoidal method
