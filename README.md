@@ -7,4 +7,4 @@ Necessary libraries for this program are listed below:
 * [matplotlib]
 * [wolframalpha] (This library is used to get the exact solution from Wolfram Alpha)
 
-### Install sympy
+### sympy
