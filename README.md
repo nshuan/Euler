@@ -2,7 +2,7 @@
 Euler methods to solve ODEs
 
 ## Setup the environment
-`From this point, the word "lib" will be used as "library" and "libs" as "libraries"`
+> From this point, the word "lib" will be used as "library" and "libs" as "libraries"
 
 Necessary libs for this program are listed below:
 * sympy
@@ -17,4 +17,10 @@ pip install sympy matplotlib wolframalpha
 ```
 
 ### Arrange folder
-> For the code to run normally, all files should be placed in the same folder
+For the code to run normally, all files should be placed in the same folder
+
+## Step by step guide
+> This guide will help you to run the program normally without reading the code
+> However, there are still tips written as comments in each file that help you to read the code easier
+
+### `main.py` file
