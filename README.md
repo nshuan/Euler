@@ -27,6 +27,12 @@ For the code to run normally, all files should be placed in the same folder
 > This is the main file of the program and it's function is to solve a first order ODE with 3 methods
 > Forward Euler, Backward Euler, Trapezoidal.
 
+Run:
+
+```bash
+python main.py
+```
+
 * Step 1: Enter required data as the tutorial in the `Input/input.txt` file
 > All values in the same line must be splitted by a comma.
 > In the first line, either `^` or `**` are acceptable, but `e^x` must be replaced by `exp(x)`.
