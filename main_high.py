@@ -45,7 +45,6 @@ def stepSolve(x, y):
     ]
     """
     y_n = 2*y[2] + 8*y[1] + y[0] + x
-    #y_n = 2*y[1] - y[0]
     
     return [y[i+1] for i in range(len(y)-1)] + [y_n]
 

@@ -30,7 +30,7 @@ def plotting(x_collection, y_collection, label_collection, func, method_name):
     plt.title(f"y' = {func}\nUsing {method_name} method")
     plt.grid(True)
 
-    plt.savefig('Output/output.png')
+    plt.savefig('Output/output_hcomparation.png')
 
     plt.show()
 
