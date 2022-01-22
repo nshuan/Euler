@@ -83,20 +83,20 @@ Input is editted directly in file `main_system.py`. For example:
 
 > Enter input values as below
 ```py
-3  INPUT = {
-4      "k" : 3,    # number of equation
-5      "t0": 0,    
-6      "tn": 3,
-7      "h" : 0.01,
-8  
-9      "iv": (1, 1, 1)   # initial values
-10 }
+3   INPUT = {
+4       "k" : 3,    # number of equation
+5       "t0": 0,    
+6       "tn": 3,
+7       "h" : 0.01,
+8   
+9       "iv": (1, 1, 1)   # initial values
+10  }
 ```
 
 > Enter the system of ODEs as below, read comments in the file for more detail
 ```py
 27  def stepSolve(t, y):
-    
+..  
 46      return [
 47          -5*y[0] + 5*y[1],
 48          14*y[0] - 2*y[1] - y[2]*y[0],
@@ -119,20 +119,20 @@ Input is editted directly in file `main_high.py`. For example:
 
 > Enter input values as below
 ```py
-4  INPUT = {
-5      "k" : 3,    # level of equation
-6      "t0": 0,    
-7      "tn": 5,
-8      "h" : 0.1,
-9  
+4   INPUT = {
+5       "k" : 3,    # level of equation
+6       "t0": 0,    
+7       "tn": 5,
+8       "h" : 0.1,
+9   
 10     "iv": (0, 1, 0)    # initial values
-11 }
+11  }
 ```
 
 > Enter the ODE as below, read comments in the file for more detail
 ```py
 27  def stepSolve(x, y):
-    
+..  
 47      y_n = 2*y[2] + 8*y[1] + y[0] + x
 48      
 49      return [y[i+1] for i in range(len(y)-1)] + [y_n]
