@@ -63,13 +63,13 @@ Enter list of step size (h): 0.01, 0.05, 0.2, 0.21
 ```
 
 * Step 4: Enter number that present the method used:
-> `0` for Forward Euler method
-> `1` for Backward Euler method
+> `0` for Forward Euler method,
+> `1` for Backward Euler method, 
 > `2` for Trapezoidal method
 
 ```bash
-y' = f(x, y) = -10*y
+"y' = f(x, y) = -10*y
 Enter x0, y0, xn: 0, 1, 3
 Enter list of step size (h): 0.01, 0.05, 0.2, 0.21
-Method used: 0
+Method used: 0"
 ```
