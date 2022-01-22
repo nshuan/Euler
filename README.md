@@ -63,7 +63,7 @@ Enter list of step size (h): 0.01, 0.05, 0.2, 0.21
 ```
 
 * Step 4: Enter number that present the method used:
-> `0` for Forward Euler method '\n'
+> `0` for Forward Euler method `\n`
 > `1` for Backward Euler method
 > `2` for Trapezoidal method
 
