@@ -10,7 +10,6 @@ import wolfram
 
 TRANSFORMATIONS     = (standard_transformations + (implicit_multiplication_application, convert_xor))
 METHODS             = ["Forward", "Backward", "Trapezoidal"]
-ANSWER_FORMAT_SPEC  = '.12f'
 MODULES             = 'sympy'
 
 def exactSolve(f, x:symbols, x0:float, y0:float, xn:float, h:float):

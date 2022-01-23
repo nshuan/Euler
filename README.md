@@ -82,7 +82,7 @@ Input is editted directly in file `main_system.py`. For example:
 * Step 1: Edit the file to match the problem
 
 > Enter input values as below
-```py
+```python
 3   INPUT = {
 4       "k" : 3,    # number of equation
 5       "t0": 0,    
@@ -94,7 +94,7 @@ Input is editted directly in file `main_system.py`. For example:
 ```
 
 > Enter the system of ODEs as below, read comments in the file for more detail
-```py
+```python
 27  def stepSolve(t, y):
 ..  
 46      return [
@@ -118,7 +118,7 @@ Input is editted directly in file `main_high.py`. For example:
 * Step 1: Edit the file to match the problem
 
 > Enter input values as below
-```py
+```python
 4   INPUT = {
 5       "k" : 3,    # level of equation
 6       "t0": 0,    
@@ -130,7 +130,7 @@ Input is editted directly in file `main_high.py`. For example:
 ```
 
 > Enter the ODE as below, read comments in the file for more detail
-```py
+```python
 27  def stepSolve(x, y):
 ..  
 47      y_n = 2*y[2] + 8*y[1] + y[0] + x

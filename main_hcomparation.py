@@ -1,10 +1,12 @@
 from sympy import symbols, Function, lambdify
-from sympy.parsing.sympy_parser import parse_expr
+from sympy.parsing.sympy_parser import (standard_transformations, implicit_multiplication_application, convert_xor,parse_expr)
 from matplotlib import pyplot as plt
 
 from Euler_forward      import forward
 from Euler_backward     import backward
 from Euler_trapezoidal  import trapezoidal
+
+TRANSFORMATIONS = (standard_transformations + (implicit_multiplication_application, convert_xor))
 
 def switch(argument, f, x0, y0, xn, h):
     switcher = {
@@ -37,7 +39,7 @@ def plotting(x_collection, y_collection, label_collection, func, method_name):
 def main() -> None:
     x           = symbols('x')
     y           = symbols('y', cls=Function)
-    f_input     = parse_expr(input("y' = f(x, y) = "))
+    f_input     = parse_expr(input("y' = f(x, y) = "), transformations=TRANSFORMATIONS)
     f           = lambdify((x, y), f_input, modules="sympy")
     x0, y0, xn  = [float(value) for value in input("Enter x0, y0, xn: ").split(",")]
     h_list      = [float(value) for value in input("Enter list of step size (h): ").split(",")]
