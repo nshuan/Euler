@@ -125,7 +125,7 @@ Input is editted directly in file `main_high.py`. For example:
 7       "tn": 5,
 8       "h" : 0.1,
 9   
-10     "iv": (0, 1, 0)    # initial values
+10      "iv": (0, 1, 0)    # initial values
 11  }
 ```
 
